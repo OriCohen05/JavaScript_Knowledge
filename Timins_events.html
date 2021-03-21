@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        td {
+            text-align: center;
+        }
+        
+        button {
+            display: block;
+            max-width: 100px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table id="tbl" align="right" bgcolor="gold" border="1" style="width:100%; height: 250px">
+        <tr id="row1">
+            <td id="row1td1">
+                <button id="button1" type="button" onclick="clearInterval(intervalf1call)"> עצירת ביצוע </button>
+            </td>
+            <td id="row1td2">בכל שלוש שניות התמונה תוצג או תוסתר</td>
+            <td id="row1td3"><img id="imgrow1" src="Images/1.png" alt="דיסני" height="100" width="100"></td>
+        </tr>
+        <tr id="row2">
+            <td><button id="button2" type="button" onclick="clearInterval(f2setinterval)"> עצירת ביצוע </button></td>
+            <td></td>
+            <td><img id="imgrow2" src="Images/2.png" alt="דיסני" height="100" width="100"></td>
+        </tr>
+        <tr id="row3">
+            <td><button id="button3" type="button" onclick="clearInterval(intervalf3)">עצירת ביצוע</button></td>
+            <td>בכל שניה יוחלפו שתי התמונות</td>
+            <td>
+                <img id="img1row3" src="Images/4.png" alt="דיסני" height="100" width="100">
+                <img id="img2row3" src="Images/5.png" alt="דיסני" height="100" width="100">
+            </td>
+        </tr>
+        <tr id="row4">
+            <td><button id="button4" type="button" onclick="clearInterval(intervalf4)">עצירת ביצוע</button></td>
+            <td>בכל שתי שניות יתווסף רכיב תמונה לתא עם המסגרת אדומה</td>
+            <td style="border:dotted; border-color:red; border-width:5px;" id="td3row4">
+            </td>
+        </tr>
+        <tr id="row5">
+            <td><button id="button5" type="button" onclick="clearInterval(intervalf5)">עצירת ביצוע</button></td>
+            <td>בכל 3 שניות הערך של התא יגדל ב-3</td>
+            <td id="row5td4">
+            </td>
+        </tr>
+        <tr id="row6">
+            <td><button id="button6" type="button" onclick="clearInterval(intervalf6)">עצירת ביצוע</button></td>
+            <td>בכל ארבע שניות ישתנה צבע הטבלה</td>
+            <td>
+                <select id="Select" style="text-align:center">
+                    <option id="0select"></option>
+                    <option id="1" value="white">white</option>
+                    <option id="2" value="lightgreen">lightgreen</option>
+                    <option id="3" value="lightcoral">lightcoral</option>
+                    <option id="4" value="lightblue">lightblue</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <script src="../JavaScript/Timing_events.js">
+    </script>
+</body>
+
+</html>
